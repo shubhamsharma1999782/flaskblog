@@ -1,0 +1,57 @@
+nav{
+    background-color: rgb(219, 238, 255);
+    margin-bottom: 15px;
+}
+.navbar-brand{
+    font-family:'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: 900;
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-left:15px;
+}
+a{
+    color:rgb(58, 58, 58);
+}
+a:hover{
+    text-decoration: none;
+}
+.title{
+    color: rgb(20, 116, 160);
+    padding: 10px;
+    padding-left: 0;
+}
+.content{
+	margin-top: 20px;
+}
+.sidebar{
+	margin-top: 10px;
+}
+/* Account page css */
+.media{
+    background-color: rgb(236, 236, 236);
+}
+.profilepic{
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+.border{
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.border:hover{
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 1px 15px rgb(216, 236, 255);
+}
+.postpic{
+    float: left;
+    margin-right: 20px;
+    width: 60px;
+}
+.datetime{
+    margin-left: 80px;
+    margin-top: 5px;
+}
