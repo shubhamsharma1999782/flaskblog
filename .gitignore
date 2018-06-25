@@ -1,5 +1,5 @@
 .vscode
 *.pyc
 *.db
-propic
+flaskblog/static/propic
 personal
