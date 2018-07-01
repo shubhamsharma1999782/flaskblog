@@ -16,18 +16,18 @@
 
 	<nav class="navbar navbar-light bg-info fixed-top">
         <div class="container">
-            <a href="{{url_for('home')}}" style="color:#ffffff; text-shadow: 1px 1px 2px black;" class="navbar-brand">Flask Blog</a>
+            <a href="{{url_for('main.home')}}" style="color:#ffffff; text-shadow: 1px 1px 2px black;" class="navbar-brand">Flask Blog</a>
             
              <ul class="nav">
-                <li class="nav-item "><a class="nav-link" href="{{url_for('home')}}">Home</a></li>
-                <li class="nav-item "><a class="nav-link" href="{{url_for('about')}}">About</a></li>				
+                <li class="nav-item "><a class="nav-link" href="{{url_for('main.home')}}">Home</a></li>
+                <li class="nav-item "><a class="nav-link" href="{{url_for('main.about')}}">About</a></li>				
 				{% if current_user.is_authenticated %}
-					<li class="nav-item "><a class="nav-link  " href="{{url_for('newpost')}}">New Post</a></li>
-					<li class="nav-item "><a class="nav-link  " href="{{url_for('account')}}">Account</a></li>
-					<li class="nav-item "><a class="nav-link  " href="{{url_for('logout')}}">Logout</a></li>
+					<li class="nav-item "><a class="nav-link  " href="{{url_for('posts.newpost')}}">New Post</a></li>
+					<li class="nav-item "><a class="nav-link  " href="{{url_for('users.account')}}">Account</a></li>
+					<li class="nav-item "><a class="nav-link  " href="{{url_for('users.logout')}}">Logout</a></li>
 				{% else %}
-					<li class="nav-item "><a class="nav-link btn btn-sm btn-primary " href="{{url_for('login')}}">Login</a></li>
-					<li class="nav-item "><a class="nav-link btn btn-success btn-sm " href="{{url_for('register')}}">Register</a></li>
+					<li class="nav-item "><a class="nav-link btn btn-sm btn-primary " href="{{url_for('users.login')}}">Login</a></li>
+					<li class="nav-item "><a class="nav-link btn btn-success btn-sm " href="{{url_for('users.register')}}">Register</a></li>
 				{% endif %}
             </ul>
         </div>

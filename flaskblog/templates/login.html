@@ -40,14 +40,14 @@
             <div class="form-group">
                 {{form.submit(class="btn btn-info")}}
                 <small class="text-muted">
-                    <a href="{{ url_for('resetrequest') }}">Forgot Password?</a>
+                    <a href="{{ url_for('users.resetrequest') }}">Forgot Password?</a>
                 </small>
             </div>
         </form>
     </div>
     <div class="border-top pt-3">
         <small class="text-muted">
-            Need An Account? <a class="" href="{{url_for('register')}}">Sign Up</a>
+            Need An Account? <a class="" href="{{url_for('users.register')}}">Sign Up</a>
         </small>
     </div>
 </div>
